@@ -6,6 +6,10 @@ In order to complete these exercises, open [repl.it](https://repl.it/) and write
 
 **Need help? Grab an instructor, use Google search, or talk to your neighbor!**
 
+## Slides
+
+The lesson slides for this workshop can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSTVul9oGeIhxt7bitkxoPdNknoiZFYw66a0aDHb8OfNlNyVBnTSy9pzwzT0qzln5kGCHJiWAl4LwKR/pub?start=false&loop=false&delayms=60000).
+
 ## Exercises
 
 ### Exercise 1. Restaurant Tip Calculator
