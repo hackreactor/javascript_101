@@ -1,7 +1,5 @@
 # Part III: Functions (Solutions)
 
-***
-
 ### Basic Requirements
 
 1. In your console, copy the following function and verify

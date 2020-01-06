@@ -1,7 +1,5 @@
 # [Hack Reactor](https://www.hackreactor.com): JavaScript 101 Workshop (Solutions)
 
----
-
 Hey there! Welcome to the `solutions` branch of this workshop. Here you will find reference solutions to the practice exercises for Hack Reactor's JavaScript 101 workshop.
 
 Much like the `master` branch of this repository, solutions are grouped by section. Please navigate into the respective section's folder on this branch to find its exercise solutions.
