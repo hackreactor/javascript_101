@@ -136,7 +136,8 @@ Before getting started on these exercises, please be certain that you've read th
     3. Eventually, you may want to verify that the output is correct. Google is a
        great tool for this:
 
-    ![google geometry answer](google-geometry-answer.gif)
+
+![google geometry answer](google-geometry-answer.gif)
 
 ### More Practice
 
