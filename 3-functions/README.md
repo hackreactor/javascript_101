@@ -1,10 +1,6 @@
-# Part III: Functions
-
-Before getting started on these exercises, please be certain that you've read the primary `README.md` [file](./README.md) in this repository for all of the necessary context.
+# Part III: Functions (Solutions)
 
 ***
-
-## Exercises
 
 ### Basic Requirements
 
@@ -26,9 +22,13 @@ Before getting started on these exercises, please be certain that you've read th
 2. Write a sentence in plain English describing how `square(square(15))` is
    evaluated.
 
+   **ANSWER**: The inner function call `square(15)` is evaluated first, then its result is used to evaluate the outer function call.
+
 3. Rename `square`'s `num` parameter in your above code to `monkey`, and
    rename the uses of that parameter in the body to `monkey` as well. Will the
    function `square` still work? Why or why not?
+
+   **ANSWER**: The function `square` will still work, because the parameter `monkey` simply represents a placeholder for an actual value that is provided when the function is called. Thus, it does not need to be named semantically for the code to work.
 
 4. What is wrong with the following definitions of `square`? Write a sentence or
    two describing the issue(s); then, try copying the erroneous examples into a
@@ -40,15 +40,25 @@ Before getting started on these exercises, please be certain that you've read th
    function square(monkey) {
      return x * x;
    }
+   ```
 
+   **PROBLEM**: There is no reference to x available. The parameter `monkey` should be refactored to `x` or vice versa for the function to work.
+
+   ```js
    function square(5) {
      return 5 * 5;
    }
+   ```
 
+   **PROBLEM**: The number 5 cannot be used as a function parameter. Parameters must be placeholders/labels, not actual values.
+
+   ```js
    function square("x") {
      return "x" * "x";
    }
    ```
+
+   **PROBLEM**: Similar to above, the string `"x"` cannot be used as a function parameter. Parameters must be placeholders/labels, not actual values. Also, strings cannot be multiplied together. The parameter should be refactored to `x` and the body of the function should be refactored to: `return x * x;`
 
 5. Fix the invalid syntax in the following functions (you can copy and paste these
    invalid definitions into your console and then edit them there):
@@ -66,6 +76,20 @@ Before getting started on these exercises, please be certain that you've read th
      return x * x;
    ```
 
+   **FIXED**:
+   ```js
+   function square1(x) {
+     return x * x;
+   }
+
+   function square2(x) {
+     return x * x;
+   }
+
+   function square3(x) {
+     return x * x;
+   }
+
 6. The following functions exhibit poor style -- fix these issues using the
    original version of `square` as a reference.
 
@@ -81,6 +105,21 @@ Before getting started on these exercises, please be certain that you've read th
    }
    ```
 
+   **FIXED**:
+   ```js
+   function square(x) {
+      return x * x;
+   }
+
+   function square(x) {
+      return x * x;
+   }
+
+   function square(x) {
+      return x * x;
+   }
+   ```
+
 7. Complete the function `cube` that returns the cube of x:
 
   ```js
@@ -89,28 +128,61 @@ Before getting started on these exercises, please be certain that you've read th
   }
   ```
 
+  **ANSWER**:
+  ```js
+  function cube(x) {
+    return x * x * x;
+  }
+
+  // OR
+
+  function cube(x) {
+    return Math.pow(x, 3);
+  }
+  ```
+
 8. Complete the function `fullName` that should take two parameters, `firstName`
    and `lastName`, and returns the `firstName` and `lastName` concatenated
    together with a space in between.
 
-  ```js
-  // don't forget the parameters!
-  function fullName() {
+   ```js
+   // don't forget the parameters!
+   function fullName() {
     // your code here
-  }
-  fullName("John", "Doe") // => "John Doe"
-  ```
+   }
+   fullName("John", "Doe") // => "John Doe"
+   ```
+
+   **ANSWER**:
+   ```js
+   function fullName(firstName, lastName) {
+      return firstName + " " + lastName;
+   }
+   ```
 
 9. Write a function `average` that takes two numbers as input (parameters), and
    returns the average of those numbers.
 
+   **ANSWER**:
+   ```js
+   function average(num1, num2) {
+      return (num1 + num2) / 2;
+   }
+
 10. Write a function `greeter` that takes a name as an argument and *greets*
     that name by returning something along the lines of `"Hello, <name>!"`
+
+  **ANSWER**:
+   ```js
+   function greeter(name) {
+      return "Hello, " + name + "!";
+   }
+   ```
 
 11. Using the document found at <a href="http://www.gbcnv.edu/documents/ASC/docs/00000005.pdf" target="_blank">this link</a>, translate the first page of geometric
     formulas into JavaScript functions.
 
-    As an example, a function to compute the perimeter of a rectangle might look
+    **ANSWER**: As an example, a function to compute the perimeter of a rectangle might look
     like this:
 
     ```js
@@ -136,38 +208,5 @@ Before getting started on these exercises, please be certain that you've read th
     3. Eventually, you may want to verify that the output is correct. Google is a
        great tool for this:
 
-    ![google geometry answer](google-geometry-answer.gif)
 
-### More Practice
-
-Translate the rest of the geometric formulas found <a href="http://www.gbcnv.edu/documents/ASC/docs/00000005.pdf" target="_blank">here</a> into JavaScript functions.
-
-### Advanced (extra practice)
-
-1. Compound interest can be calculated with the formula:
-
-    ![future value](future-value.png)
-
-    - *F*: future value
-    - *P*: present value
-    - *i*: nominal interest rate
-    - *n*: compounding frequency
-    - *t*: time
-
-  Write a function `futureValue` that can be used to calculate the *future value*
-  of a quantity of money using compound interest.
-
-  Use the function to calculate what the future value of $1700 (*P* = 1700)
-  deposited in a bank that pays an annual interest rate of 4.7% (*i* = 0.047),
-  compounded quarterly (*n* = 4) after 6 years (*t* = 6) (you can use `Math.pow`
-  to do exponentiation).
-
-2. Write a `power` function that accepts the parameters `base` and `exponent`
-   and returns the result. Replace `square` and `cube` with the `power` function
-   you just wrote. Do not use `Math.pow`.
-
-3. Write your own square-root function called `sqrt` that accepts a `number`
-   parameter and returns an approximate square root. Square-root approximations
-   make use of averages. Be sure to use the `average` function you previously
-   wrote. The first version of your square root function should perform no more
-   than 3 successive averages.
+![google geometry answer](google-geometry-answer.gif)
