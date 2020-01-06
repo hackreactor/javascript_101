@@ -1,65 +1,49 @@
 # Hack Reactor: JavaScript 101 Workshop
 
-Hey there! Ready to get your hands dirty with some code? 
+##### Scheduled Length: 3 Hours
 
-In order to complete these exercises, open [repl.it](https://repl.it/) and write your code in the left-hand panel. You can run your code using the "Run" button.
+---
 
-**Need help? Grab an instructor, use Google search, or talk to your neighbor!**
+Hey there! Ready to get your hands dirty with some code? This is the practice exercise repository for Hack Reactor's JavaScript 101 workshop. JavaScript 101 is the first lesson in our free, four-part Introductory JavaScript Series (101, 201, 301 and 401). We're excited to have you.
+
+In order to complete these exercises, open [repl.it](https://repl.it/), choose JavaScript, and then write your code in the left-hand panel. You can run your code using the "Run" button.
+
+**EXPECTATION:** You will be expected to fully engage during lecture periods. Accordingly, please wait until the designated times during this live workshop to explore the exercises. You will be given 10-15 minutes per section, so please pace yourself accordingly.
+
+**NEED HELP?** Practice developing your autonomy as a programmer. Use [Google Search](https://www.google.com) or [Stack Overflow](https://www.stackoverflow.com), peruse documentation at [mdn.io](https://www.mdn.io), or talk to your friendly neighbor. If you're utterly stuck, flag down your instructor for guidance.
+
+**_DISCLAIMER:_** _Completion of this workshop is no guarantee of admission into the Hack Reactor immersive program, nor does it have any influence in the admissions process._
 
 ## Slides
 
-The lesson slides for this workshop can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSTVul9oGeIhxt7bitkxoPdNknoiZFYw66a0aDHb8OfNlNyVBnTSy9pzwzT0qzln5kGCHJiWAl4LwKR/pub?start=false&loop=false&delayms=60000).
+The slide deck for this workshop can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vShggHhyyF6jz1lQhQi5t8w397HqA7MLFU_-rgTRcgJY-cbkDRpzupGI9KLOF6QhMkPXtQ0B_HAol_n/pub?start=false&loop=false&delayms=3000).
 
 ## Exercises
 
-### Exercise 1. Restaurant Tip Calculator
+Each lecture in this workshop will be followed by a set of self-guided practice exercises. The exercises are divided by section and are housed in their respective folders within this Github repository.
 
-  1) Define a function named `calculateTip` and give it two arguments: `total` and `percent`
+Each section of practice exercises has a `Basic Requirements` portion. Some sections may also contain additional sections for advanced practice. During the live workshop, you are only expected to complete the `Basic Requirements` sections and may complete the remainder as homework.
 
-  2) Inside your function, use the `return` keyword to output a tip according to the `percent` argument.
+_For your ease of access – click the following links for each section's practice exercises._
 
-  Extra Credit: Want to shave off the extra decimal places? [Click here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) to learn about the `.toFixed()` function and how to use it.
+- Part I: History, Usage and Development (no exercises)
+- Part II: [Foundations of Programming](./2-foundations-of-programming)
+- Part III: [Functions](./3-functions)
 
-In the example below, your function should output `7.965`.
+## Thinking about JavaScript
 
-```js
-calculateTip(44.25, 18)
-```
+##### Line-by-line
 
-### Exercise 2. Picking apart a URL
+As you embark on your learning journey, a superior method for thinking about JavaScript will be to consider each line of code as a discrete instruction. What is each line of code intended to do individually? How about when combined together?
 
-  1) Define a function named `removePrefix` and give it one argument: `url`
+It will be beneficial for your growth as a sophisticated programmer to think deeply about the intentions of your code so you can predict and understand the behavior your program produces.
 
-  2) Inside your function, return the url without "www." included. Hint: Use `.slice`
+Thinking about each line of code can take many shapes:
+- How is this line of code structured and why?
+- What syntax rules is this line of code following? Not following?
+- Where is this line of code located contextually within the program?
+- What references is this line of code making to other parts of the program?
 
-  Hint: Don't forget to wrap quotes around your strings!
+##### Vocabulary Development
 
-In the example below, your function should output `google.com`.
-
-```js
-removePrefix('www.google.com')
-```
-
-### Exercise 3. Random Number Generator
-
-  1) Define a function named `randomNumberGen` with no arguments.
-
-  2) Inside your function, return a random number between 1 and 10. Hint: Use `Math.random()` and `Math.floor(number)`
-
-In the example below, your function should output a whole number between 1 and 10.
-
-```js
-randomNumberGen()
-```
-
-### Super Extra Credit: "Sentence Reverser"
-
-  1) Define a function named `reverseSentence` with one argument: `sentence`
-
-  2) Inside your function, return the reversed copy of the `sentence` that is passed in as an argument. Hint: Use `String.split()` `Array.reverse()` and `Array.join()`
-
-In the example below, your function should output "!ecnetnes emosewa na si sihT".
-
-```js
-reverseSentence('This is an awesome sentence!')
-```
+Developing your vocabulary as a programmer is as important as learning to write code. To accelerate your conversational capabilities, we recommend partnering with a neighbor to discuss your code at every opportunity. The more opportunities you have to explain yourself, the better. Don't worry – with time, the ambiguity with which you presently speak about code will eventually develop into eloquent prose.
