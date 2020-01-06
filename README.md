@@ -1,8 +1,6 @@
-# Hack Reactor: JavaScript 101 Workshop
+# [Hack Reactor](http://www.hackreactor.com): JavaScript 101 Workshop
 
-##### Scheduled Length: 3 Hours
-
----
+#### Scheduled Length: 3 Hours
 
 Hey there! Ready to get your hands dirty with some code? This is the practice exercise repository for Hack Reactor's JavaScript 101 workshop. JavaScript 101 is the first lesson in our free, four-part Introductory JavaScript Series (101, 201, 301 and 401). We're excited to have you.
 
@@ -33,8 +31,6 @@ _For your ease of access – click the following links for each section's practi
 ## Exercise Solutions
 
 You may find reference solutions for this workshop's exercises on the `solutions` [branch](blob/solutions/README.md) of this repository. Please do not refer to the solutions until you've given each problem set a valiant effort.
-
-***
 
 ## Thinking about JavaScript
 

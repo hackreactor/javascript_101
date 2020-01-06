@@ -2,8 +2,6 @@
 
 Before getting started on these exercises, please be certain that you've read the primary `README.md` [file](./README.md) in this repository for all of the necessary context.
 
-***
-
 ## Exercises
 
 ### Basic Requirements
