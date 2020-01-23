@@ -26,9 +26,9 @@
    (3 + 2) * (4 - 1)
    ```
 
-3. Calculate how old you are in minutes using the console.
+3. Calculate 50 years in minutes using the console.
 
-4. What is the percentage of people in the class with brown hair? Use the
+4. What is the percentage of letters in the english alphabet that are vowels (including y)? Use the
    console to find out.
 
 5. Try the following expressions in the console:
